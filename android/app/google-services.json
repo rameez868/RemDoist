@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "84456946174",
+    "firebase_url": "https://maulahjatflutter-default-rtdb.firebaseio.com",
+    "project_id": "maulahjatflutter",
+    "storage_bucket": "maulahjatflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84456946174:android:17b428d1dc5be72af5a8af",
+        "android_client_info": {
+          "package_name": "com.maulahjat.rem_doist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84456946174-r5dre3do5vosuvfosiub5impbr0r1jjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-YWIImvEYPXjBqhAZbafPPCVFghiEz3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84456946174-r5dre3do5vosuvfosiub5impbr0r1jjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

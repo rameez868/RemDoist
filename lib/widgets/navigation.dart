@@ -16,9 +16,9 @@ Widget createDrawerHeader() {
             bottom: 12.0,
             left: 30.0,
             child: Container(
-              padding: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-              color: Colors.red.withOpacity(0.7),
-              child: const Text("Staff Food Order List",
+              padding: const EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 5.0),
+              color: Colors.grey.withOpacity(0.7),
+              child: const Text("Reminders and To-Dos",
                   style: TextStyle(
                       fontFamily: "Gothic",
                       color: Colors.greenAccent,

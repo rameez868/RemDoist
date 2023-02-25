@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:rem_doist/fragments/dailyReminder.dart';
 import 'dart:math';
 import 'dart:async';
 
 import '../widgets/circular_progress_loading.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({Key? key}) : super(key: key);
+
+  const SplashPage({Key? key,  required this.title}) : super(key: key );
+  final String title;
   @override
   _SplashPageState createState() => _SplashPageState();
 }
@@ -53,14 +56,14 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement initState
     super.initState();
     loadingStatus();
-    // Timer(const Duration(seconds: 4),
-    //         ()=>Navigator.pushReplacement(context,
-    //         MaterialPageRoute(builder:
-    //             (context) =>
-    //             HomePage(),
-    //         )
-    //     )
-    // );
+    Timer(const Duration(seconds: 4),
+            ()=>Navigator.pushReplacement(context,
+            MaterialPageRoute(builder:
+                (context) =>
+                    DailyReminderFragment(),
+            )
+        )
+    );
   }
 
   @override
@@ -70,7 +73,7 @@ class _SplashPageState extends State<SplashPage> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/skeleton-skull.gif"),
+            image: AssetImage("assets/images/phoenix_01.jpg"),
             fit: BoxFit.fill,  ),
         ),
         child: Center(
@@ -91,7 +94,7 @@ class _SplashPageState extends State<SplashPage> {
                 style: const TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
-                  color:  Colors.white70,
+                  color: Colors.yellowAccent,
                 ),
               ),
               const SizedBox(height: 20),

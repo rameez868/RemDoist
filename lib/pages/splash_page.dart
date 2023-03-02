@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rem_doist/fragments/dailyReminder.dart';
+import 'package:rem_doist/fragments/daily_reminder_fragment.dart';
 import 'dart:math';
 import 'dart:async';
 

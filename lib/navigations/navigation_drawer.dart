@@ -16,7 +16,7 @@ class RemDoistNavigationDrawer extends StatelessWidget {
             createDrawerHeader(),
             createDrawerBodyItem(
                 icon: Icons.home,
-                text: 'Daily Reminder',
+                text: 'Daily Reminder and Todo List',
                 onTap: ()=>Navigator.pushReplacementNamed(context, RemRoutes.dailyReminder)
             ),
           ],

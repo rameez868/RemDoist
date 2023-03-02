@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:rem_doist/firebase_options.dart';
 import 'package:rem_doist/pages/splash_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+// import 'fragments/daily_reminder_fragment.dart';
+
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   // This widget is the root of your application.
   @override
@@ -14,9 +21,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Reminder App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
+
       ),
-      home: const SplashPage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      home: const SplashPage(title: 'Reminder, To-do List',),
     );
   }
 }

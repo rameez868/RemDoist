@@ -59,7 +59,6 @@ class _DailyReminderCardState extends State<DailyReminderCard> {
                     fontSize: 18.0,
                     fontFamily: "Gothic",
                     color: Colors.cyan,
-
                   ),
                 ),
               ],

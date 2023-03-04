@@ -9,7 +9,7 @@ import 'package:rem_doist/widgets/daily_reminder_card.dart';
 import 'package:video_player/video_player.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:draggable_fab/draggable_fab.dart';
-import 'package:flutter/src/material/date_picker.dart';
+
 
 class DailyReminderFragment extends StatefulWidget {
   DailyReminderFragment({Key? key}) : super(key: key);
@@ -27,7 +27,6 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
   final _dateTimeController = TextEditingController();
   final Future<FirebaseApp> _futureFirebase = Firebase.initializeApp();
   final ScrollController _scrollController = ScrollController();
-  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final databaseReference = FirebaseDatabase.instance.ref("DailyReminder");
   String snapshotkey = "";
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rem_doist/data_access_layer/daily_reminder_doa.dart';
 import 'package:rem_doist/models/daily_reminder.dart';
+import 'package:rem_doist/extensions/string_extension.dart';
 
 class DailyReminderCard extends StatefulWidget {
  DailyReminderCard({Key? key, required this.dailyReminder, required this.snapShotKey}) : super(key: key);
@@ -48,13 +49,15 @@ class _DailyReminderCardState extends State<DailyReminderCard> {
                   'Date: ${widget.dailyReminder.dateTime}',
                   style: const TextStyle(
                     fontSize: 18.0,
+                    fontFamily: "Gothic",
                     color: Colors.greenAccent,
                   ),
                 ),
                 Text(
-                  'Reminder: ${widget.dailyReminder.reminder.toUpperCase()}',
+                  'Reminder: ${widget.dailyReminder.reminder.toTitleCase()}',
                   style: const TextStyle(
                     fontSize: 18.0,
+                    fontFamily: "Gothic",
                     color: Colors.cyan,
 
                   ),

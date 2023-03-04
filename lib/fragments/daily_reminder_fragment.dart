@@ -8,6 +8,7 @@ import 'package:rem_doist/widgets/circular_progress_loading.dart';
 import 'package:rem_doist/widgets/daily_reminder_card.dart';
 import 'package:video_player/video_player.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:draggable_fab/draggable_fab.dart';
 import 'package:flutter/src/material/date_picker.dart';
 
 class DailyReminderFragment extends StatefulWidget {
@@ -56,7 +57,9 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Text('To-do List'),
+        title: const Text('To-do List',style: TextStyle(
+          fontFamily: "Gothic",
+        )),
       ),
       drawer: const RemDoistNavigationDrawer(),
       body: FutureBuilder<List<dynamic>>(
@@ -88,12 +91,14 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
           }
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _displayDialog();
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      floatingActionButton: DraggableFab(
+        child: FloatingActionButton(
+          onPressed: () {
+            _displayDialog();
+          },
+          tooltip: 'Increment',
+          child: const Icon(Icons.add),
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
@@ -119,13 +124,26 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
         builder: (BuildContext context) {
           return AlertDialog(
             backgroundColor: Colors.white70,
-            title: const Text('Add reminder to list'),
+            title: Container(
+              color: Colors.red,
+              padding: const EdgeInsets.all(20),
+              child: const Center(
+                child: Text('Add Reminder To List',
+                    style: TextStyle(
+                      fontFamily: "Gothic",
+                    )),
+              ),
+            ),
             content: SingleChildScrollView(
                 child: Column(
               children: <Widget>[
                 TextField(
                   controller: _reminderController,
-                  decoration: const InputDecoration(hintText: 'Enter Reminder'),
+                  decoration: const InputDecoration(
+                      hintText: 'Enter Reminder',
+                      hintStyle: TextStyle(
+                        fontFamily: "Gothic",
+                      )),
                 ),
               ],
             )),
@@ -135,13 +153,19 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
                     _addData();
                     Navigator.of(context).pop();
                   },
-                  child: const Text('Add')),
+                  child: const Text('Add',
+                      style: TextStyle(
+                        fontFamily: "Gothic",
+                      ))),
               TextButton(
                   onPressed: () {
                     _reminderController.clear();
                     Navigator.of(context).pop();
                   },
-                  child: const Text('Cancel'))
+                  child: const Text('Cancel',
+                      style: TextStyle(
+                        fontFamily: "Gothic",
+                      )))
             ],
           );
         });
@@ -171,8 +195,11 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
                 rethrow;
               }
               // Then show a snackbar.
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Reminder dismissed')));
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  content: Text('Reminder dismissed',
+                      style: TextStyle(
+                        fontFamily: "Gothic",
+                      ))));
             },
             // Show a red background as the item is swiped away.
             background: Container(color: Colors.red),

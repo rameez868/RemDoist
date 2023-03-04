@@ -9,7 +9,7 @@ class RemDoistNavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.grey[900],
+        color: Colors.red,
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[

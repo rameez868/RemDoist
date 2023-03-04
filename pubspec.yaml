@@ -34,6 +34,7 @@ dependencies:
   firebase_core: ^2.7.0
   firebase_database: ^10.0.9
   intl: ^0.16.1
+  draggable_fab: ^0.1.1
 
 
   # The following adds the Cupertino Icons font to your application.

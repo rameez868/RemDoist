@@ -39,12 +39,13 @@ Widget createDrawerBodyItem(
       children: <Widget>[
         Icon(
           icon,
-          color: Colors.redAccent,
+          color: Colors.greenAccent,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: Text(text,
               style: const TextStyle(
+                fontFamily: "Gothic",
                 color: Colors.white,
               )),
         )

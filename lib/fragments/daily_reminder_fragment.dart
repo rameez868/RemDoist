@@ -95,7 +95,7 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
           onPressed: () {
             _displayDialog();
           },
-          tooltip: 'Increment',
+          tooltip: 'Add Reminder',
           child: const Icon(Icons.add),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
@@ -104,7 +104,8 @@ class _DailyReminderFragmentState extends State<DailyReminderFragment> {
 
   Future<void> _addData() async {
     String reminder = _reminderController.text;
-    var date = DateTime.parse("2019-04-16 12:18:06.018950");
+    //var date = DateTime.parse("2019-04-16 12:18:06.018950");
+    var date = DateTime.now();
     var formattedDate = "${date.day}-${date.month}-${date.year}";
 
     final dailyReminder = DailyReminder(

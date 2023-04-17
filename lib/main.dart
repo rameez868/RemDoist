@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       home: const SplashPage(title: 'Reminder, To-do List',),
       routes:  {
         RemRoutes.dailyReminder: (context) => DailyReminderFragment(),
-        RemRoutes.shoppingList: (context) => ShoppingList(),
+        RemRoutes.shoppingList: (context) => ShoppingListFragment(),
       },
     );
   }

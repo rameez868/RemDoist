@@ -48,7 +48,7 @@ class _DailyReminderCardState extends State<DailyReminderCard> {
                 Text(
                   'Date: ${widget.dailyReminder.dateTime}',
                   style: const TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 14.0,
                     fontFamily: "Gothic",
                     color: Colors.greenAccent,
                   ),
@@ -56,7 +56,7 @@ class _DailyReminderCardState extends State<DailyReminderCard> {
                 Text(
                   'Reminder: ${widget.dailyReminder.reminder.toTitleCase()}',
                   style: const TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 14.0,
                     fontFamily: "Gothic",
                     color: Colors.cyan,
                   ),

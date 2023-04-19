@@ -14,7 +14,7 @@ import 'package:rem_doist/widgets/shopping_list_card.dart';
 
 class ShoppingListFragment extends StatefulWidget {
   ShoppingListFragment({Key? key}) : super(key: key);
-  static const String routeName = '/ShoppingList';
+  static const String routeName = '/ShoppingListPage';
   @override
   State<ShoppingListFragment> createState() => _ShoppingListFragmentState();
   final shoppingListDao = ShoppingListDao();
@@ -34,7 +34,7 @@ class _ShoppingListFragmentState extends State<ShoppingListFragment> {
 
   @override
   void initState() {
-    _controller = VideoPlayerController.asset('assets/videos/girl_1.mp4');
+    _controller = VideoPlayerController.asset('assets/videos/girl_2.mp4');
     _initializeVideoPlayerFuture = _controller.initialize().then((value) {
       _controller.setVolume(0);
       _controller.play();
@@ -98,7 +98,7 @@ class _ShoppingListFragmentState extends State<ShoppingListFragment> {
           onPressed: () {
             _displayDialog();
           },
-          tooltip: 'Add Reminder',
+          tooltip: 'Add Item',
           child: const Icon(Icons.add),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.

@@ -50,7 +50,7 @@ class _ShoppingListCardState extends State<ShoppingListCard> {
                     Text(
                       'Date: ${widget.shoppingList.dateTime}',
                       style: const TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 14.0,
                         fontFamily: "Gothic",
                         color: Colors.greenAccent,
                       ),
@@ -58,7 +58,7 @@ class _ShoppingListCardState extends State<ShoppingListCard> {
                     Text(
                       'Item: ${widget.shoppingList.item.toTitleCase()}',
                       style: const TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 14.0,
                         fontFamily: "Gothic",
                         color: Colors.cyan,
                       ),
@@ -66,7 +66,7 @@ class _ShoppingListCardState extends State<ShoppingListCard> {
                     Text(
                       'Total Quantity: ${widget.shoppingList.totalQuantity}',
                       style: const TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 14.0,
                         fontFamily: "Gothic",
                         color: Colors.cyan,
                       ),
@@ -74,7 +74,7 @@ class _ShoppingListCardState extends State<ShoppingListCard> {
                     Text(
                       'Description: ${widget.shoppingList.desc.toTitleCase()}',
                       style: const TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 14.0,
                         fontFamily: "Gothic",
                         color: Colors.cyan,
                       ),

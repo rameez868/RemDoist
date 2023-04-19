@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:rem_doist/firebase_options.dart';
 import 'package:rem_doist/fragments/daily_reminder_fragment.dart';
 import 'package:rem_doist/fragments/shopping_list_fragment.dart';
+import 'package:rem_doist/fragments/wish_list_fragment.dart';
 import 'package:rem_doist/pages/splash_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:rem_doist/routes/rem_routes.dart';
+
 
 // import 'fragments/daily_reminder_fragment.dart';
 
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
       routes:  {
         RemRoutes.dailyReminder: (context) => DailyReminderFragment(),
         RemRoutes.shoppingList: (context) => ShoppingListFragment(),
+        RemRoutes.wishList: (context)=> WishListFragment(),
       },
     );
   }

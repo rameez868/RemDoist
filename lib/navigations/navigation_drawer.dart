@@ -24,6 +24,11 @@ class RemDoistNavigationDrawer extends StatelessWidget {
                 text: 'Shopping List',
                 onTap: ()=>Navigator.pushReplacementNamed(context, RemRoutes.shoppingList)
             ),
+            createDrawerBodyItem(
+                icon: Icons.account_balance_wallet_rounded,
+                text: 'Wish List',
+                onTap: ()=>Navigator.pushReplacementNamed(context, RemRoutes.wishList)
+            ),
           ],
         ),
       ),

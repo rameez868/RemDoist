@@ -48,7 +48,7 @@ Widget createDrawerBodyItem(
                 fontFamily: "Gothic",
                 color: Colors.white,
               )),
-        )
+        ),
       ],
     ),
     onTap: onTap,

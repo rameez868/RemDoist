@@ -33,7 +33,7 @@ dependencies:
   video_player: ^2.5.1
   firebase_core: ^2.7.0
   firebase_database: ^10.0.9
-  intl: ^0.16.1
+  intl: any
   draggable_fab: ^0.1.1
   number_inc_dec: ^0.8.0
 
